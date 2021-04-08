@@ -1,5 +1,19 @@
-let js = "amazing";
-if (js === "amazing") alert("JavaScript is FUN!");
+const dolScore = [89, 96, 108]
 
-40 + 8 + 23 - 10;
-console.log(40 + 8 + 23 - 10);
+function getDAvg(dolScore) {
+    const total = dolScore.reduce((acc, c) => acc + c, 0);
+    return total / dolScore.length;
+}
+
+const averageD = getDAvg(dolScore);
+console.log(averageD);
+
+const koaScore = [88, 91, 110]
+
+function getKAvg(koaScore) {
+    const total = koaScore.reduce ((acc, c) => acc + c, 0);
+    return total / koaScore.length;
+}
+
+const averageK = getKAvg(koaScore);
+console.log(averageK);
