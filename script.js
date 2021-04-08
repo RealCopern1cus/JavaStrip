@@ -17,3 +17,11 @@ function getKAvg(koaScore) {
 
 const averageK = getKAvg(koaScore);
 console.log(averageK);
+
+if (averageD > averageK) {
+    console.log('Dolpins win the trophy');
+} else if (averageK > averageD) {
+    console.log ('Koalas win the trophy');
+} else if (averageD === averageK) {
+    console.log('Bothe win the trophy!');
+}
